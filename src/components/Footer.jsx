@@ -18,7 +18,7 @@ const columns = [
     links: [
       { label: "Contact & map", to: "/#contact" },
       { label: "Bomet Town, Bomet County", to: "/#contact" },
-      { label: "+254 700 000 000", to: "tel:+254700000000", external: true },
+      { label: "+254 706 932437", to: "tel:+254706932437", external: true },
       { label: "hello@littleforest.ke", to: "mailto:hello@littleforest.ke", external: true },
     ],
   },
