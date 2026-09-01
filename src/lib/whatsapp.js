@@ -1,4 +1,4 @@
-export const WHATSAPP_NUMBER = "0706932437"
+export const WHATSAPP_NUMBER = "+254706932437"
 
 /**
  * Builds a wa.me link with a pre-filled, URL-encoded message.
