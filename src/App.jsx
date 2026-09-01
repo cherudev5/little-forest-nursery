@@ -5,6 +5,7 @@ import { Navbar } from "@/components/Navbar"
 import { Footer } from "@/components/Footer"
 import { WhatsAppButton } from "@/components/WhatsAppButton"
 import { ScrollToHash } from "@/components/ScrollToHash"
+import { ChatWidget } from "@/components/ChatWidget"
 import { Home } from "@/pages/Home"
 import { Sponsor } from "@/pages/Sponsor"
 
@@ -21,6 +22,7 @@ function App() {
       </main>
       <Footer />
       <WhatsAppButton />
+      <ChatWidget />
     </CartProvider>
   )
 }
