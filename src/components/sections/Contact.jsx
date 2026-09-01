@@ -53,7 +53,7 @@ export function Contact() {
                 </span>
                 <div className="text-sm">
                   <p className="font-medium">Call us</p>
-                  <p className="text-muted-foreground">0706932437</p>
+                  <p className="text-muted-foreground">+254 706 932 437</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
