@@ -15,6 +15,7 @@ import {
 import { CartSheet } from "@/components/CartSheet"
 
 const links = [
+  { label: "About us", to: "/#about" },
   { label: "Our mission", to: "/#mission" },
   { label: "Shop seedlings", to: "/#nursery" },
   { label: "Our impact", to: "/#impact" },
@@ -22,8 +23,7 @@ const links = [
 ]
 
 export function Navbar() {
-  const { count } = useCart()
-  const [cartOpen, setCartOpen] = React.useState(false)
+  const { count, cartOpen, setCartOpen } = useCart()
   const [menuOpen, setMenuOpen] = React.useState(false)
 
   return (
