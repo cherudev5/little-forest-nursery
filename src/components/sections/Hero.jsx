@@ -30,7 +30,15 @@ export function Hero() {
             Little Forest is a community nursery in Bomet County helping
             families, farms, and schools turn every seedling into lasting
             shade, soil, and possibility.
-          </p>
+            Our work doesn’t stop at selling you seedlings. We’re here to 
+            support you as your trees grow to maturity, so that your little forest can become part of a much bigger impact: increasing forest cover and creating greener, healthier communities. 🌳💚 
+            
+            
+          </p >
+          <a href="#contact" className=" mt-6 inline-block text-xl font-semibold text-slate-800 hover:scale-105 hover:-translate-y-0.5 transition-transform duration-200 ease-in-out cursor-pointer">
+          Let’s grow together. Reach us today, contact on our Bio
+          
+          </a>
 
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <Button size="lg" asChild>

@@ -65,11 +65,12 @@ export function About() {
           </div>
         </div>
 
+        <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+          We help you grow your own little forest at home with a variety of indigenous and ornamental trees, so you can contribute to a greener, healthier environment from your own compound.
+        </p>
         <div className="mt-12 rounded-3xl bg-[#eef3e4] p-8 sm:p-10">
-          <p className="max-w-2xl text-base leading-relaxed text-foreground/90">
-            We help you grow your own little forest at home with a variety of
-            indigenous and ornamental trees, so you can contribute to a
-            greener, healthier environment from your own compound.
+          <p className="leading-relaxed text-foreground/90 text-xl">
+            Our Vision: To be a leader in environmental restoration by promoting growing of indigenous and fruit trees at households, communities, institutions and water sources.
           </p>
         </div>
       </div>

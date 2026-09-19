@@ -157,7 +157,13 @@ export function Sponsor() {
         <div className="container">
           <div className="grid items-center gap-10 rounded-3xl border border-border bg-card p-8 sm:p-12 lg:grid-cols-[auto_1fr] lg:gap-14">
             <span className="flex size-16 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
-              <Sprout className="size-7" />
+              <img
+              src="/Little Logo.png"
+            alt="little Forest Nursery"
+            className="w-20 h-11 md:w-12 md:h-12 object-contain rounded-md"
+            >
+              
+              </img>
             </span>
             <div>
               <p className="eyebrow">Coming soon</p>

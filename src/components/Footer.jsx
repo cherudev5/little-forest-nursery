@@ -7,7 +7,7 @@ const columns = [
   {
     title: "Explore",
     links: [
-      { label: "Our mission", to: "/#mission" },
+      { label: "About us", to: "/#about" },
       { label: "Shop seedlings", to: "/#nursery" },
       { label: "Our impact", to: "/#impact" },
       { label: "Sponsor a seedling", to: "/sponsor" },
@@ -31,8 +31,13 @@ export function Footer() {
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.3fr_1fr_1fr]">
           <div>
             <Link to="/" className="flex items-center gap-2">
-              <span className="flex size-9 items-center justify-center rounded-full bg-primary text-primary-foreground">
-                <Sprout className="size-5" />
+              <span className="flex size-11 items-center justify-center rounded-full bg-primary text-primary-foreground">
+                <img
+            src="/Little Logo.png"
+            alt="little Forest Nursery Logo"
+            className="w-20 h-11 md:w-12 md:h-12 object-contain rounded-md"
+                                                                           
+          />
               </span>
               <span className="font-serif text-lg">Little Forest Nursery</span>
             </Link>

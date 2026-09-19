@@ -12,7 +12,7 @@ export const seedlings = [
       "Crucial for medicinal research, provides habitat, and promotes forest health.",
     price: 15,
     available: 180,
-    image: "",
+    image: "/Seedlings/Prunusafricana.png",
   },
   {
     id: "croton-macrostachyus",
@@ -22,7 +22,7 @@ export const seedlings = [
       "A fast-growing indigenous canopy tree that helps bring life back to working landscapes.",
     price: 12,
     available: 240,
-    image: "",
+    image: "/Seedlings/Croton macrostachyus.png",
   },
   {
     id: "grevillea-robusta",
@@ -32,7 +32,7 @@ export const seedlings = [
       "A dependable farm forestry companion for windbreaks, shade, and household timber.",
     price: 10,
     available: 320,
-    image: "",
+    image: "/Seedlings/grevillea robusta.png",
   },
   {
     id: "avocado-seedling",
@@ -42,7 +42,7 @@ export const seedlings = [
       "A carefully raised fruit seedling that pairs household nourishment with a greener homestead.",
     price: 18,
     available: 95,
-    image: "",
+    image: "/Seedlings/avocado-seedling.png",
   },
   {
     id: "markhamia-lutea",
@@ -55,7 +55,7 @@ export const seedlings = [
       "Provides quick canopy cover, reduces soil erosion, and supports pollinators.",
     price: 9,
     available: 210,
-    image: "",
+    image: "/Seedlings/markhamia-lutea.png",
   },
   {
     id: "syzygium-cordatum",
@@ -68,7 +68,7 @@ export const seedlings = [
       "Stabilizes riparian zones, supports birdlife, and enhances local water cycles.",
     price: 14,
     available: 140,
-    image: "",
+    image: "/Seedlings/syzygium-cordatum.png",
   },
   {
     id: "syzygium-guineense",
@@ -81,7 +81,7 @@ export const seedlings = [
       "Provides food for wildlife and helps prevent land degradation in upland areas.",
     price: 13,
     available: 160,
-    image: "",
+    image:"/Seedlings/syzygium-guineense.jpeg",
   },
   {
     id: "warburgia-ugandensis",
@@ -94,7 +94,7 @@ export const seedlings = [
       "Helps maintain traditional knowledge, supports biodiversity, and stabilizes degraded lands.",
     price: 16,
     available: 75,
-    image: "",
+    image: "/Seedlings/warburgia-ugandensis.png",
   },
   {
     id: "olea-africana",
@@ -107,7 +107,7 @@ export const seedlings = [
       "Supports carbon sequestration, provides nesting for birds, and prevents desertification.",
     price: 14,
     available: 130,
-    image: "",
+    image: "/Seedlings/olea-africana.png",
   },
   {
     id: "vitex-keniensis",
@@ -120,7 +120,7 @@ export const seedlings = [
       "Promotes indigenous forest conservation and contributes to biodiversity corridors.",
     price: 20,
     available: 40,
-    image: "",
+    image: "/Seedlings/vitex-keniensis.png",
   },
   {
     id: "podocarpus-latifolius",
@@ -133,7 +133,7 @@ export const seedlings = [
       "Improves forest structure, protects water catchments, and stores carbon.",
     price: 17,
     available: 90,
-    image: "",
+    image: "/Seedlings/podocarpus-latifolius.png",
   },
   {
     id: "bambusa-bambos",
@@ -146,6 +146,6 @@ export const seedlings = [
       "Prevents erosion, purifies water, and provides sustainable building material.",
     price: 8,
     available: 260,
-    image: "",
+    image: "/Seedlings/bambusa-bambos.png",
   },
 ]

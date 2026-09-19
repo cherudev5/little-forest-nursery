@@ -4,23 +4,23 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 
 const images = [
   {
-    src: "",
+    src: "/carousel/seedlings shaded.png",
     alt: "Rows of young seedlings shaded under netting at Little Forest",
   },
   {
-    src: "",
+    src: "/carousel/watering seedling.png",
     alt: "A grower watering seedling trays in the nursery",
   },
   {
-    src: "",
+    src: "/carousel/Potting soil.png",
     alt: "Potting soil and seedling bags ready for planting day",
   },
   {
-    src: "",
+    src: "/carousel/tree saplings.png",
     alt: "Indigenous tree saplings lined up for a school planting project",
   },
   {
-    src: "",
+    src: "/carousel/planted seedling.png",
     alt: "A newly planted seedling on a farm in Bomet County",
   },
 ]

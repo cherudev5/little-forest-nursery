@@ -30,8 +30,12 @@ export function Navbar() {
     <header className="sticky top-0 z-40 border-b border-border/70 bg-background/90 backdrop-blur">
       <div className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
-          <span className="flex size-9 items-center justify-center rounded-full bg-primary text-primary-foreground">
-            <Sprout className="size-5" />
+          <span className="flex size-11 items-center justify-center rounded-full bg-primary text-primary-foreground ">
+            <img
+              src="/Little Logo.png"
+              alt="little Forest Nursery"
+              className="w-20 h-11 md:w-12 md:h-12 object-contain rounded-md"
+            />
           </span>
           <span className="font-serif text-lg leading-none">
             Little Forest
