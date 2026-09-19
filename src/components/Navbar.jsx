@@ -1,6 +1,5 @@
 import * as React from "react"
-import { Link } from "react-router-dom"
-import { HeartHandshake, Menu, ShoppingBasket, Sprout } from "lucide-react"
+import { Menu, ShoppingBasket, Sprout } from "lucide-react"
 
 import { useCart } from "@/context/CartContext"
 import { Button } from "@/components/ui/button"
@@ -15,27 +14,30 @@ import {
 import { CartSheet } from "@/components/CartSheet"
 
 const links = [
-  { label: "About us", to: "/#about" },
-  { label: "Our mission", to: "/#mission" },
-  { label: "Shop seedlings", to: "/#nursery" },
-  { label: "Our impact", to: "/#impact" },
-  { label: "Visit us", to: "/#contact" },
+  { label: "Home", href: "#top" },
+  { label: "About us", href: "#about" },
+  { label: "Our mission", href: "#mission" },
+  { label: "Shop seedlings", href: "#nursery" },
+  { label: "Our impact", href: "#impact" },
+  { label: "Visit or get in touch", href: "#contact" },
 ]
 
 export function Navbar() {
-  const { count, cartOpen, setCartOpen } = useCart()
+  const { count } = useCart()
+  const [cartOpen, setCartOpen] = React.useState(false)
   const [menuOpen, setMenuOpen] = React.useState(false)
 
   return (
     <header className="sticky top-0 z-40 border-b border-border/70 bg-background/90 backdrop-blur">
       <div className="container flex h-16 items-center justify-between">
-        <Link to="/" className="flex items-center gap-2">
-          <span className="flex size-11 items-center justify-center rounded-full bg-primary text-primary-foreground ">
+        <a href="#top" className="flex items-center gap-2">
+          <span className="flex size-9 items-center justify-center rounded-full bg-primary text-primary-foreground">
             <img
-              src="/Little Logo.png"
-              alt="little Forest Nursery"
-              className="w-20 h-11 md:w-12 md:h-12 object-contain rounded-md"
-            />
+            src="/Little Logo.png"
+            alt="little Forest Nursery Logo"
+            className="w-20 h-11 md:w-12 md:h-12 object-contain rounded-md"
+                                                                           
+          />
           </span>
           <span className="font-serif text-lg leading-none">
             Little Forest
@@ -43,25 +45,18 @@ export function Navbar() {
               Nursery
             </span>
           </span>
-        </Link>
+        </a>
 
         <nav className="hidden items-center gap-8 md:flex">
           {links.map((link) => (
-            <Link
-              key={link.to}
-              to={link.to}
+            <a
+              key={link.href}
+              href={link.href}
               className="text-sm font-medium text-foreground/80 transition-colors hover:text-primary"
             >
               {link.label}
-            </Link>
+            </a>
           ))}
-          <Link
-            to="/sponsor"
-            className="flex items-center gap-1.5 text-sm font-medium text-primary transition-colors hover:text-primary/80"
-          >
-            <HeartHandshake className="size-4" />
-            Sponsor a seedling
-          </Link>
         </nav>
 
         <div className="flex items-center gap-2">
@@ -87,24 +82,15 @@ export function Navbar() {
               </SheetHeader>
               <nav className="flex flex-col gap-1 px-4">
                 {links.map((link) => (
-                  <SheetClose asChild key={link.to}>
-                    <Link
-                      to={link.to}
+                  <SheetClose asChild key={link.href}>
+                    <a
+                      href={link.href}
                       className="rounded-md px-2 py-2.5 text-sm font-medium text-foreground/80 hover:bg-accent hover:text-primary"
                     >
                       {link.label}
-                    </Link>
+                    </a>
                   </SheetClose>
                 ))}
-                <SheetClose asChild>
-                  <Link
-                    to="/sponsor"
-                    className="flex items-center gap-1.5 rounded-md px-2 py-2.5 text-sm font-medium text-primary hover:bg-accent"
-                  >
-                    <HeartHandshake className="size-4" />
-                    Sponsor a seedling
-                  </Link>
-                </SheetClose>
               </nav>
             </SheetContent>
             <Button
