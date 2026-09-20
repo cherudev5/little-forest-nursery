@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { AtSign, MessageCircle, Sprout } from "lucide-react"
+import { AtSign, MessageCircle } from "lucide-react"
 
 import { Separator } from "@/components/ui/separator"
 
@@ -7,17 +7,17 @@ const columns = [
   {
     title: "Explore",
     links: [
-      { label: "About us", to: "/#about" },
-      { label: "Shop seedlings", to: "/#nursery" },
-      { label: "Our impact", to: "/#impact" },
+      { label: "About us", to: "/about" },
+      { label: "Shop seedlings", to: "/nursery" },
+      { label: "Our impact", to: "/impact" },
       { label: "Sponsor a seedling", to: "/sponsor" },
     ],
   },
   {
     title: "Visit",
     links: [
-      { label: "Contact & map", to: "/#contact" },
-      { label: "Bomet Town, Bomet County", to: "/#contact" },
+      { label: "Contact & map", to: "/contact" },
+      { label: "Bomet Town, Bomet County", to: "/contact" },
       { label: "+254 706 932 437", to: "+254 706 932 437", external: true },
       { label: "hello@littleforest.ke", to: "mailto:hello@littleforest.ke", external: true },
     ],

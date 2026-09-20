@@ -20,35 +20,34 @@ export function Hero() {
             Growing a greener Bomet
           </span>
 
-          <h1 className="mt-6 text-4xl leading-[1.1] sm:text-5xl lg:text-[3.4rem]">
-            Put down roots.
-            <br />
-            Grow a future.
+          <h1 className="mt-6 text-4xl text-green-900 leading-[1.1] sm:text-5xl lg:text-[3.4rem]">
+            OUR VISION.
+            
           </h1>
 
-          <p className="mt-6 max-w-md text-base leading-relaxed text-muted-foreground">
-            Little Forest is a community nursery in Bomet County helping
-            families, farms, and schools turn every seedling into lasting
-            shade, soil, and possibility.
-            Our work doesn’t stop at selling you seedlings. We’re here to 
-            support you as your trees grow to maturity, so that your little forest can become part of a much bigger impact: increasing forest cover and creating greener, healthier communities. 🌳💚 
+          <p className="mt-6 max-w-md text-black leading-relaxed text-xl">
+           To be a leader in environmental restoration by promoting growing of indigenous and fruit trees at households, communities, institutions and water sources.
             
             
           </p >
-          <a href="#contact" className=" mt-6 inline-block text-xl font-semibold text-slate-800 hover:scale-105 hover:-translate-y-0.5 transition-transform duration-200 ease-in-out cursor-pointer">
+          <a href="/contact" className=" mt-6 inline-block text-xl font-semibold text-slate-800 hover:scale-105 hover:-translate-y-0.5 transition-transform duration-200 ease-in-out cursor-pointer">
           Let’s grow together. Reach us today, contact on our Bio
           
           </a>
 
           <div className="mt-8 flex flex-wrap items-center gap-4">
-            <Button size="lg" asChild>
-              <a href="#nursery">
-                Choose your seedlings
-                <ArrowRight className="size-4" />
+            <Button
+              size="lg"
+              asChild
+              className="group animate-bounce shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-2xl active:scale-95"
+              >
+              <a href="/nursery">
+              Choose your seedlings
+              <ArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-1" />
               </a>
             </Button>
             <Button size="lg" variant="ghost" asChild>
-              <a href="#mission">Why Little Forest</a>
+              <a href="/mission">Why Little Forest</a>
             </Button>
           </div>
 
