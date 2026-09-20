@@ -47,7 +47,7 @@ export function Hero() {
               </Link>
             </Button>
             <Button size="lg" variant="ghost" asChild>
-              <a href="/mission">Why Little Forest</a>
+              <Link to="/mission">Why Little Forest</Link>
             </Button>
           </div>
 
