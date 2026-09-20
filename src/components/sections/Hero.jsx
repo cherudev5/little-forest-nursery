@@ -1,5 +1,5 @@
 import { ArrowRight, Leaf } from "lucide-react"
-
+import {Link} from "react-router-dom"
 import { Button } from "@/components/ui/button"
 import { HeroCarousel } from "@/components/HeroCarousel"
 
@@ -30,10 +30,10 @@ export function Hero() {
             
             
           </p >
-          <a href="/contact" className=" mt-6 inline-block text-xl font-semibold text-slate-800 hover:scale-105 hover:-translate-y-0.5 transition-transform duration-200 ease-in-out cursor-pointer">
+          <Link to="/contact" className=" mt-6 inline-block text-xl font-semibold text-slate-800 hover:scale-105 hover:-translate-y-0.5 transition-transform duration-200 ease-in-out cursor-pointer">
           Let’s grow together. Reach us today, contact on our Bio
           
-          </a>
+          </Link>
 
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <Button
@@ -41,10 +41,10 @@ export function Hero() {
               asChild
               className="group animate-bounce shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-2xl active:scale-95"
               >
-              <a href="/nursery">
+              <Link to="/nursery">
               Choose your seedlings
               <ArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-1" />
-              </a>
+              </Link>
             </Button>
             <Button size="lg" variant="ghost" asChild>
               <a href="/mission">Why Little Forest</a>
