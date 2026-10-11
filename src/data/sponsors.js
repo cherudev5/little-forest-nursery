@@ -1,16 +1,16 @@
 export const sponsorPackages = [
   {
-    id: "single-seedling",
-    name: "Sponsor a seedling",
-    quantity: "1 seedling",
+    id: "Starter Little Forest",
+    name: "Starter Little Forest",
+    quantity: "5 seedling",
     price: "KES 500",
     destination: "Planted at a partner school",
     description:
-      "Covers one seedling, planting day support, and its first season of care.",
+      "Covers five seedlings, planting day support, and its first season of care.",
   },
   {
-    id: "classroom-grove",
-    name: "Sponsor a classroom grove",
+    id: "Family Little Forest",
+    name: "Family Little Forest",
     quantity: "25 seedlings",
     price: "KES 10,000",
     destination: "Planted with a school for a full classroom planting day",
@@ -19,8 +19,8 @@ export const sponsorPackages = [
     featured: true,
   },
   {
-    id: "cbo-plot",
-    name: "Sponsor a CBO restoration plot",
+    id: "Farm Little Forest ",
+    name: "Farm Little Forest ",
     quantity: "100 seedlings",
     price: "KES 35,000",
     destination: "Donated to a community-based organization's restoration project",
@@ -28,9 +28,9 @@ export const sponsorPackages = [
       "Funds a full batch of seedlings for a community group working to restore a shared piece of land.",
   },
   {
-    id: "custom",
-    name: "Custom or corporate sponsorship",
-    quantity: "Tailored to you",
+    id: "Institutional Little Forest ",
+    name: "Institutional Little Forest ",
+    quantity: "500+",
     price: "Let's talk",
     destination: "Matched to a school or CBO based on your goals",
     description:
