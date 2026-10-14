@@ -302,17 +302,7 @@ export const seedlings = [
     available: 0,
     image: "image.png",
   },
-  {
-    id: "podocarpus-latifolius",
-    category: "Indigenous",
-    name: "Podocarpus latifolius",
-    localName: "Saptet",
-    description: "Podocarpus latifolius, an indigenous conifer used for timber and ornament.",
-    importance: "Provides timber, posts, poles and firewood; important for conservation.",
-    price: 50,
-    available: 0,
-    image: "image.png",
-  },
+  
   {
     id: "zanthoxylum-gilletti",
     category: "Indigenous",
