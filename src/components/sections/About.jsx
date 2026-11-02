@@ -33,10 +33,8 @@ export function About() {
             A nature-inspired social enterprise, rooted in Bomet.
           </h2>
           <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-            Little Forest Nursery is a nature-inspired social enterprise
-            rooted in Bomet County, Kenya. We are passionate about restoring
-            landscapes, conserving water sources, and greening spaces — one
-            seedling at a time.
+            Little Forest Nursery Limited is a nature-inspired women owned social enterprise based in Bomet County, Kenya. 
+            We grow and supply indigenous and fruit tree seedlings and help households,schools,communities and institutions establish “little forests” of at least 100 trees. By combining tree growing, environmental education and practical planting support, we connect landscape restoration with livelihoods and the protection of water sources.
           </p>
         </div>
 

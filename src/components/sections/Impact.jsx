@@ -3,9 +3,9 @@ import {  Leaf, MapPinned, TrendingUp } from "lucide-react"
 
 
 const steps = [
-  { n: "01", title: "Planting place recorded" },
-  { n: "02", title: "Stewardship updates" },
-  { n: "03", title: "A growing story" },
+  { n: "52", title: "Little forests established" },
+  { n: "11,690", title: "Trees Grown" },
+  { n: "16", title: "Little forests in schools" },
 ]
 
 const roots = [
@@ -50,11 +50,11 @@ export function Impact() {
               Restoration that feels close to home.
             </h3>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-              Our work starts with local growers, practical planting
-              knowledge, and a simple promise: every tree deserves a good
-              beginning and a community that knows how to care for it.
-            </p>
-
+              Households:36little forests and 7,690trees grown.
+            </p >
+            <p className="mt-4 text-sm leading-relaxed text-muted-foreground" >Schools and institutions: 16 little forests and 4,000trees grown.</p>
+            
+            
             <ul className="mt-8 flex flex-col gap-4">
               {roots.map((item) => (
                 <li key={item.text} className="flex items-center gap-3">

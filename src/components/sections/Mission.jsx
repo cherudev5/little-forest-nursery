@@ -40,9 +40,8 @@ export function Mission() {
           </div>
 
           <blockquote className="border-l-2 border-primary/30 pl-6 font-serif text-xl leading-snug text-foreground/90 lg:text-2xl">
-            "Our Mission is to ensure thousands of households across Kenya are able to 
-            grow little forests of at least 100 trees so that they can earn livelihood from 
-            the fruit trees and ensure Kenya’s forest cover increases."
+            "To help households,communities and institutions grow little forests of at least 100 trees by providing quality tree and fruit seedlings, planting 
+            guidance, and support to nurture and track trees to maturity. Through this work, we aim to create livelihood  opportunities, increase tree cover, and protect forests and water sources for future generations."
           </blockquote>
         </div>
       </div>
