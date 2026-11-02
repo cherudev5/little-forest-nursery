@@ -62,7 +62,7 @@ export function Contact() {
                 </span>
                 <div className="text-sm">
                   <p className="font-medium">Email us</p>
-                  <p className="text-muted-foreground">hello@littleforest.ke</p>
+                  <p className="text-muted-foreground">info@littleforestke.com</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
