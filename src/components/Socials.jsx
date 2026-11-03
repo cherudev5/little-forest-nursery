@@ -1,7 +1,7 @@
 import { MessageCircle } from "lucide-react"
 
 import { cn } from "@/lib/utils"
-import { socialLinks } from "@/data/social"
+import { socialLinks } from "@/data/Socials"
 
 // lucide-react no longer ships brand icons, so these are simple inline SVGs.
 const svgProps = {
