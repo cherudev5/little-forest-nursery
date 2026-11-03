@@ -19,7 +19,7 @@ const columns = [
       { label: "Contact & map", to: "/contact" },
       { label: "Bomet Town, Bomet County", to: "/contact" },
       { label: "+254 706 932 437", to: "+254 706 932 437", external: true },
-      { label: "hello@littleforest.ke", to: "mailto:hello@littleforest.ke", external: true },
+      { label: "info@littleforestke.com", to: "mailto:info@littleforestke.com", external: true },
     ],
   },
 ]
@@ -31,11 +31,11 @@ export function Footer() {
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.3fr_1fr_1fr]">
           <div>
             <Link to="/" className="flex items-center gap-2">
-              <span className="flex size-11 items-center justify-center rounded-full bg-primary text-primary-foreground">
+              <span >
                 <img
-            src="/Little Logo.png"
+            src="/logo2.png"
             alt="little Forest Nursery Logo"
-            className="w-20 h-11 md:w-12 md:h-12 object-contain rounded-md"
+            className="h-10 w-auto object-contain rounded-md"
                                                                            
           />
               </span>
@@ -45,18 +45,7 @@ export function Footer() {
               A community nursery in Bomet County helping families, farms,
               and schools grow a greener future, one seedling at a time.
             </p>
-            <div className="mt-5 flex items-center gap-3">
-              {[AtSign, MessageCircle].map((Icon, i) => (
-                <a
-                  key={i}
-                  href="mailto:hello@littleforest.ke"
-                  aria-label="Contact link"
-                  className="flex size-9 items-center justify-center rounded-full border border-border text-foreground/70 transition-colors hover:border-primary hover:text-primary"
-                >
-                  <Icon className="size-4" />
-                </a>
-              ))}
-            </div>
+            
           </div>
 
           {columns.map((col) => (

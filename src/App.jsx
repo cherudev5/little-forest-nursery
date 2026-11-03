@@ -13,6 +13,7 @@ import { Nursery } from "@/pages/Nursery"
 import { Impact } from "@/pages/Impact"
 import { Contact } from "@/pages/Contact"
 import { Sponsor } from "@/pages/Sponsor"
+import { OurWork } from "@/pages/Ourwork"
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/impact" element={<Impact />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/sponsor" element={<Sponsor />} />
+          <Route path="/our-work" element={<OurWork />} />
         </Routes>
       </main>
       <Footer />

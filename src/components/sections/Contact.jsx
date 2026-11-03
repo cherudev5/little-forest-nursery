@@ -30,7 +30,7 @@ export function Contact() {
             <div className="overflow-hidden rounded-2xl border border-border">
               <iframe
                 title="Little Forest Nursery location in Bomet"
-                src="https://www.google.com/maps?q=Bomet,Kenya&output=embed"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d827.2478275721634!2d35.1645765563151!3d-0.7346982899686455!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182b0b1a53cff875%3A0xbbdd72f9172bca37!2sLittle%20Forest%20Nursery!5e1!3m2!1sen!2ske!4v1793710789064!5m2!1sen!2ske" 
                 className="h-72 w-full"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

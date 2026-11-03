@@ -1,3 +1,17 @@
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table"
+
+const vision2030 = [
+  { group: "Community forests", forests: "1,000", trees: "100,000" },
+  { group: "School forests", forests: "300", trees: "75,000" },
+]
+
 const offerings = [
   {
     emoji: "🌳",
@@ -66,10 +80,52 @@ export function About() {
         <p className="mt-6 text-base leading-relaxed text-muted-foreground">
           We help you grow your own little forest at home with a variety of indigenous and ornamental trees, so you can contribute to a greener, healthier environment from your own compound.
         </p>
+        <div id="vision" className="scroll-mt-24">
         <div className="mt-12 rounded-3xl bg-[#eef3e4] p-8 sm:p-10">
           <p className="leading-relaxed text-foreground/90 text-xl">
             Our Vision: To be a leader in environmental restoration by promoting growing of indigenous and fruit trees at households, communities, institutions and water sources.
           </p>
+        </div>
+
+        <div className="mt-8 rounded-3xl border border-border bg-card p-8 sm:p-10">
+          <p className="eyebrow">Our vision 2030</p>
+          <p className="mt-3 max-w-3xl text-lg leading-relaxed text-foreground/90">
+            In line with the government vision of 15 billion trees by 2032,this is how Little Forest is contributing to this goal.
+          </p>
+
+          <div className="mt-6 overflow-hidden rounded-2xl border border-border">
+            <Table>
+              <TableHeader className="bg-secondary/60">
+                <TableRow>
+                  <TableHead className="px-6 py-4 font-semibold">
+                    Our vision 2030
+                  </TableHead>
+                  <TableHead className="px-6 py-4 text-right font-semibold">
+                    Little forests
+                  </TableHead>
+                  <TableHead className="px-6 py-4 text-right font-semibold">
+                    Trees grown
+                  </TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                {vision2030.map((row) => (
+                  <TableRow key={row.group}>
+                    <TableCell className="px-6 py-4 font-medium">
+                      {row.group}
+                    </TableCell>
+                    <TableCell className="px-6 py-4 text-right">
+                      {row.forests}
+                    </TableCell>
+                    <TableCell className="px-6 py-4 text-right">
+                      {row.trees}
+                    </TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+          </div>
+        </div>
         </div>
       </div>
     </section>
