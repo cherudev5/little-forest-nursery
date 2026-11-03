@@ -14,7 +14,7 @@ import {
   SheetClose,
 } from "@/components/ui/sheet"
 import { CartSheet } from "@/components/CartSheet"
-import { SocialLinks } from "@/components/SocialLinks"
+import { SocialLinks } from "@/components/Sociallinks"
 
 const aboutMenu = [
   { label: "Intro", to: "/about" },
