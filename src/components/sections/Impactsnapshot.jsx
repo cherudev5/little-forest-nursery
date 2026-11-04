@@ -1,12 +1,6 @@
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableFooter,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table"
+import { Home, School, Trees } from "lucide-react"
+
+import { cn } from "@/lib/utils"
 
 const stats = [
   { value: "52", label: "Little forests established" },
@@ -14,9 +8,15 @@ const stats = [
   { value: "16", label: "Little forests in schools" },
 ]
 
-const rows = [
-  { group: "Households", forests: "36", trees: "7,690" },
-  { group: "Schools and institutions", forests: "16", trees: "4,000" },
+const groups = [
+  { title: "Households", icon: Home, forests: "36", trees: "7,690" },
+  {
+    title: "Schools and institutions",
+    icon: School,
+    forests: "16",
+    trees: "4,000",
+  },
+  { title: "Total", icon: Trees, forests: "52", trees: "11,690", highlight: true },
 ]
 
 export function ImpactSnapshot() {
@@ -44,46 +44,72 @@ export function ImpactSnapshot() {
           ))}
         </dl>
 
-        <div className="mt-10 overflow-hidden rounded-2xl border border-border bg-card">
-          <Table>
-            <TableHeader className="bg-secondary/60">
-              <TableRow>
-                <TableHead className="px-6 py-4 font-semibold">Who</TableHead>
-                <TableHead className="px-6 py-4 text-right font-semibold">
-                  Little forests
-                </TableHead>
-                <TableHead className="px-6 py-4 text-right font-semibold">
-                  Trees grown
-                </TableHead>
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              {rows.map((row) => (
-                <TableRow key={row.group}>
-                  <TableCell className="px-6 py-4 font-medium">
-                    {row.group}
-                  </TableCell>
-                  <TableCell className="px-6 py-4 text-right">
-                    {row.forests}
-                  </TableCell>
-                  <TableCell className="px-6 py-4 text-right">
-                    {row.trees}
-                  </TableCell>
-                </TableRow>
-              ))}
-            </TableBody>
-            <TableFooter>
-              <TableRow>
-                <TableCell className="px-6 py-4 font-semibold">Total</TableCell>
-                <TableCell className="px-6 py-4 text-right font-semibold">
-                  52
-                </TableCell>
-                <TableCell className="px-6 py-4 text-right font-semibold">
-                  11,690
-                </TableCell>
-              </TableRow>
-            </TableFooter>
-          </Table>
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {groups.map(({ title, icon: Icon, forests, trees, highlight }) => (
+            <div
+              key={title}
+              className={cn(
+                "rounded-2xl border p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg",
+                highlight
+                  ? "border-primary bg-primary text-primary-foreground"
+                  : "border-border bg-card hover:border-primary/30"
+              )}
+            >
+              <span
+                className={cn(
+                  "flex size-11 items-center justify-center rounded-full",
+                  highlight
+                    ? "bg-white/15 text-primary-foreground"
+                    : "bg-primary/10 text-primary"
+                )}
+              >
+                <Icon className="size-5" />
+              </span>
+
+              <h3
+                className={cn(
+                  "mt-4 text-lg font-semibold",
+                  highlight && "text-primary-foreground"
+                )}
+              >
+                {title}
+              </h3>
+
+              <dl
+                className={cn(
+                  "mt-5 grid grid-cols-2 gap-4 border-t pt-5",
+                  highlight ? "border-white/20" : "border-border"
+                )}
+              >
+                <div>
+                  <dd className="font-serif text-3xl">{forests}</dd>
+                  <dt
+                    className={cn(
+                      "mt-1 text-xs",
+                      highlight
+                        ? "text-primary-foreground/80"
+                        : "text-muted-foreground"
+                    )}
+                  >
+                    Little forests
+                  </dt>
+                </div>
+                <div>
+                  <dd className="font-serif text-3xl">{trees}</dd>
+                  <dt
+                    className={cn(
+                      "mt-1 text-xs",
+                      highlight
+                        ? "text-primary-foreground/80"
+                        : "text-muted-foreground"
+                    )}
+                  >
+                    Trees grown
+                  </dt>
+                </div>
+              </dl>
+            </div>
+          ))}
         </div>
       </div>
     </section>
