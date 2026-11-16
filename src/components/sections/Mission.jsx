@@ -1,48 +1,51 @@
-import { MapPin, Route } from "lucide-react"
-
-const pillars = [
-  {
-    icon: MapPin,
-    title: "Raised for place",
-    body: "We focus on seedlings that belong in Bomet's landscapes, from indigenous canopy trees to productive plants for home and farm.",
-  },
-  {
-    icon: Route,
-    title: "Follow the journey",
-    body: "Every planting can be connected to a place, a progress update, and the people caring for it over time.",
-  },
-]
 
 export function Mission() {
   return (
-    <section id="mission" className="py-20 lg:py-28">
-      <div className="container">
-        <div className="max-w-2xl">
-          <p className="eyebrow">Our mission</p>
-          <h2 className="mt-3 text-3xl leading-tight sm:text-4xl">
-            A nursery is small. The change is not.
-          </h2>
-        </div>
+    <section
+      id="mission"
+      className="relative overflow-hidden bg-primary/[0.06] py-24 lg:py-32"
+    >
+      {/* Decorative background elements */}
+      <div className="absolute -right-24 -top-24 size-72 rounded-full bg-primary/10 blur-3xl" />
+      <div className="absolute -bottom-24 -left-24 size-72 rounded-full bg-primary/10 blur-3xl" />
 
-        <div className="mt-12 grid gap-10 lg:grid-cols-[1fr_1fr] lg:gap-16">
-          <div className="grid gap-10 sm:grid-cols-2">
-            {pillars.map((pillar) => (
-              <div key={pillar.title}>
-                <span className="flex size-11 items-center justify-center rounded-full bg-primary/10 text-primary">
-                  <pillar.icon className="size-5" />
+      <div className="container relative">
+        <div className="mx-auto max-w-5xl">
+          <div className="rounded-3xl border border-primary/15 bg-background/80 px-7 py-12 shadow-xl shadow-primary/5 backdrop-blur-sm sm:px-12 sm:py-16 lg:px-20 lg:py-20">
+
+            {/* Section title */}
+            <div className="mb-10 text-center">
+              <span className="mx-auto mb-5 block h-1 w-16 rounded-full bg-primary" />
+
+              <p className="text-sm font-semibold uppercase tracking-[0.25em] text-primary">
+                Our Mission
+              </p>
+
+              <h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">
+                Growing little forests.
+                <span className="block text-primary">
+                  Creating lasting impact.
                 </span>
-                <h3 className="mt-4 text-xl">{pillar.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  {pillar.body}
-                </p>
-              </div>
-            ))}
-          </div>
+              </h2>
+            </div>
 
-          <blockquote className="border-l-2 border-primary/30 pl-6 font-serif text-xl leading-snug text-foreground/90 lg:text-2xl">
-            "To help households,communities and institutions grow little forests of at least 100 trees by providing quality tree and fruit seedlings, planting 
-            guidance, and support to nurture and track trees to maturity. Through this work, we aim to create livelihood  opportunities, increase tree cover, and protect forests and water sources for future generations."
-          </blockquote>
+            {/* Mission statement */}
+            <blockquote className="mx-auto max-w-3xl text-center font-serif text-lg leading-relaxed text-foreground/80 sm:text-xl lg:text-2xl lg:leading-relaxed">
+              "To help households, communities and institutions grow
+              little forests of at least 100 trees by providing quality
+              tree and fruit seedlings, planting guidance, and support
+              to nurture and track trees to maturity. Through this work,
+              we aim to create livelihood opportunities, increase tree
+              cover, and protect forests and water sources for future
+              generations."
+            </blockquote>
+
+            {/* Bottom accent */}
+            <div className="mt-10 flex justify-center">
+              <span className="h-1 w-20 rounded-full bg-primary/30" />
+            </div>
+
+          </div>
         </div>
       </div>
     </section>

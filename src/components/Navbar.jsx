@@ -17,7 +17,7 @@ import { CartSheet } from "@/components/CartSheet"
 import { SocialLinks } from "@/components/Socials"
 
 const aboutMenu = [
-  { label: "Intro", to: "/about" },
+  { label: "Who we are", to: "/about" },
   { label: "Vision", to: "/about#vision" },
   { label: "Mission", to: "/mission" },
 ]
